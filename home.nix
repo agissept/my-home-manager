@@ -26,6 +26,7 @@
     pkgs.lua
     pkgs.mate.engrampa
     pkgs.neofetch
+    pkgs.direnv
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
