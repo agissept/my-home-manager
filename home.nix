@@ -85,11 +85,20 @@
 
   imports = [
     ./nvim.nix
+    <catppuccin/modules/home-manager>
+    ./starship.nix
   ];
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
 
+  catppuccin.flavor = "mocha";
+  catppuccin.enable = true;
+  catppuccin.ghostty.enable = true;
+  catppuccin.starship.enable = true;
+  
 
+  programs.man.enable = false;
+  home.extraOutputsToInstall = [ "man" ];
 }
