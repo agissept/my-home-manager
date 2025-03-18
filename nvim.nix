@@ -9,6 +9,7 @@
       stylua
       # Telescope
       ripgrep
+      markdownlint-cli2
     ];
 
     plugins = with pkgs.vimPlugins; [
@@ -58,7 +59,7 @@
           trouble-nvim
           vim-illuminate
           vim-startuptime
-          which-key-nvim
+           which-key-nvim
           { name = "LuaSnip"; path = luasnip; }
           { name = "catppuccin"; path = catppuccin-nvim; }
           { name = "mini.ai"; path = mini-nvim; }
