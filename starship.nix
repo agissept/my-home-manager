@@ -7,7 +7,7 @@
       settings = {
         format = ''
           ''${custom.poker}''${custom.spotify}
-          ''${custom.nix_file}$all      
+          ''${custom.nix_file}$all
         '';
 
         custom.spotify = {

@@ -29,7 +29,6 @@
     pkgs.mate.engrampa
     pkgs.neofetch
     pkgs.direnv
-    (config.lib.nixGL.wrap pkgs.ghostty)
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -97,8 +96,13 @@
   catppuccin.enable = true;
   catppuccin.ghostty.enable = true;
   catppuccin.starship.enable = true;
-  
+  catppuccin.ghostty.flavor = "mocha"; 
 
   programs.man.enable = false;
   home.extraOutputsToInstall = [ "man" ];
+
+  programs.ghostty = {
+    enable = true;
+    package = config.lib.nixGL.wrap pkgs.ghostty;
+  };
 }
