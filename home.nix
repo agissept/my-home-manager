@@ -29,6 +29,7 @@
     pkgs.mate.engrampa
     pkgs.neofetch
     pkgs.direnv
+    pkgs.http-server
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
