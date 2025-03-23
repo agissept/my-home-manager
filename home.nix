@@ -19,17 +19,17 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
-    pkgs.fortune
-    pkgs.htop
-    pkgs.superfile
-    pkgs.nodejs_20
-    pkgs.lz4
-    pkgs.lua
-    pkgs.mate.engrampa
-    pkgs.neofetch
-    pkgs.direnv
-    pkgs.http-server
+  home.packages = with pkgs; [
+   fortune
+   htop
+   superfile
+   nodejs_20
+   lz4
+   lua
+   mate.engrampa
+   neofetch
+   direnv
+   http-server
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
