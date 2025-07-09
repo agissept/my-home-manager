@@ -105,4 +105,10 @@
     package = config.lib.nixGL.wrap pkgs.ghostty;
     settings.font-size = 11;
   };
+
+  programs.carapace = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
 }
