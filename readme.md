@@ -1,1 +1,1 @@
-** home manager config for my self
+# home manager config for my self

@@ -103,7 +103,12 @@
   programs.ghostty = {
     enable = true;
     package = config.lib.nixGL.wrap pkgs.ghostty;
-    settings.font-size = 11;
+    settings = {
+      font-size = 11;
+      palette = [
+        "15=#ffffff"
+      ];
+    };
   };
 
   programs.carapace = {
